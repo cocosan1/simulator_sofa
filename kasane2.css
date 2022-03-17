@@ -1,0 +1,43 @@
+.sofa {
+    top: 30px;
+    left: 330px;
+    width: 70vw;
+    position: absolute;
+}
+
+.fabric {
+    top: 30px;
+    left: 330px;
+    width: 70vw;
+    position: absolute;
+}
+
+.title {
+    top: 20px;
+    left:40px;
+    position: absolute;
+
+}
+
+.select_sofa {
+    top: 50px;
+    left: 20px;
+    position: absolute;
+}
+.fabric_rank {
+    top: 200px;
+    left: 40px;
+    position: absolute;
+}
+
+.fabric_name {
+    top: 250px;
+    left: 40px;
+    position: absolute;
+}
+
+.link_home {
+    top: 500px;
+    left: 40px;
+    position: absolute;
+}
