@@ -1,7 +1,7 @@
 .container_title header{
     width: 22%;
-    padding: 5px;
     margin: 10px;
+    margin-left: 20px;
 }
 .container_main{
     width: 95%;
@@ -14,26 +14,19 @@
 
 .sofa {
     top: 10px;
-    left: 330px;
+    left: 350px;
     width: 70vw;
     position: absolute;
 }
 
 .fabric {
     top: 10px;
-    left: 330px;
+    left: 350px;
     width: 70vw;
     position: absolute;
 }
-
-/* .title {
-    top: 20px;
-    left:40px;
-    position: absolute;
-
-} */
-
 .select_sofa {
+    width: 245px;
     position: absolute;
 }
 .fabric_rank {
@@ -47,6 +40,6 @@
 }
 
 .link_home {
-    top: 520px;
+    top: 470px;
     position: absolute;
 }
