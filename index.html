@@ -4,86 +4,76 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>simulator_sofa</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="kasane2.css" type="text/css"> 　<!--css指定-->
+    <link rel="stylesheet" href="kasane2.css" type="text/css">  <!--css指定-->
   </head>
   <body>
-    <h3 class="title" >color simulator</h3>
-
-    <div class="test">
-        <img class="fabric" id="fabric" src="fabric/seiburu_bu3_15.png" width="918" height="540"> 
-        <img class= "sofa" id="sofa" src="sofa/kioku2_abe.png" width="918" height="540"> <!--元サイズw1020 h600 59%-->
-   
-        
-        <div class="select_sofa">
-          <select class="select_sofa rounded-pill btn-secondary" name="select_sofa" id="select_sofa" size="1" onchange="change_sofa(this,sofa)">
-            <option value="">--ソファを選択してください--</option>
-            <option value="sofa/aoba2.png">青葉/ナラ/OU/床ナチュラル</option>
-            <option value="sofa/tokiha2.png">とき葉/ナラ/WO/床ナチュラル</option> 
-            <option value="sofa/kioku2_abe.png">森の記憶abe/ナラ/OF/床ナチュラル</option>
-            <option value="sofa/yuyu2.png">悠々/ナラ/OU</option>
-            <option value="sofa/yuyu2_1abe.png">悠々abe/ナラ/OU</option>
-            <option value="sofa/levita2.png">Levita/ナラ/DU/床ナチュラル</option>    
-            <option value="sofa/seoto2.png">seoto/ウォルナット/WA/床ナチュラル</option>
-            <option value="sofa/seoto_n2.png">seoto/Wオーク/OU/床ナチュラル</option>
-            <option value="sofa/morikoto2.png">森のことば/ナラ/OF/床ナチュラル</option>
-            <option value="sofa/viola2.png">VIOLA/ナラ/OU/床ナチュラル</option>
-            <option value="sofa/onga2.png">温雅/ウォルナット/WA/床ウォルナット</option>
-            <option value="sofa/onga3.png">温雅/オーク/OU/床ナチュラル</option>
-            <option value="sofa/kazenouta2.png">風のうた/オーク/WO/床ナチュラル</option>
-            <option value="sofa/sd2.png">スタンドードC/オーク/OF/床ナチュラル</option>
-            <option value="sofa/morikoto_ou.png">森こと片肘/OU/背景なし</option>
-            <option value="sofa/morikoto_wa.png">森こと片肘/WA/背景なし</option>
-            <option value="sofa/seoto_wo.png">SEOTO/WO/背景なし</option>
-            <option value="sofa/seoto_wa.png">SEOTO/WA/背景なし</option>
-            </select>
-        </div> 
-    　　
-        
-        <div class="select_fabric"> 
-          <select class="fabric_rank rounded-pill btn-secondary" id="fabric_rank" size="1">
-            <option>--張地のランクを選択してください--</option>
-            <option value="tif">TIFランク</option>
-            <option value="b">Bランク</option>
-            <option value="c">Cランク</option>
-            <option value="e">Eランク</option>
-            <option value="gb">合皮 Bランク</option>
-            <option value="ha">本革Aランク 未収録</option>
-            <option value="hb">本革Bランク 未収録</option>
-            <option value="s">shop専用</option>
-          </select> 
-
-          <select class="fabric_name rounded-pill btn-secondary" name="fabric_name" id="fabric_name" size="1" onchange="change_fabric(this,fabric)">
-            <option value="">--張地を選択してください--</option> 
-            
-          </select>
-        </div>
-
-        <!-- <div calss="link_home">
-          <a href="http://linkpagetest.s3-website-ap-northeast-1.amazonaws.com/">home</a>
-        </div> -->
-
-        
+    <div class="container_title">
+      <header>
+        <h3 class="title" >color simulator</h3>
+      </header>
     </div>
     
-    
-       
+    <div class="container_main">
+      <div class="select_sofa">
+        <select class="select_sofa rounded-pill btn-secondary" name="select_sofa" id="select_sofa" size="1" onchange="change_sofa(this,sofa)">
+          <option value="">--ソファを選択してください--</option>
+          <option value="sofa/aoba2.png">青葉/ナラ/OU/床ナチュラル</option>
+          <option value="sofa/tokiha2.png">とき葉/ナラ/WO/床ナチュラル</option> 
+          <option value="sofa/kioku2_abe.png">森の記憶abe/ナラ/OF/床ナチュラル</option>
+          <option value="sofa/yuyu2.png">悠々/ナラ/OU</option>
+          <option value="sofa/yuyu2_1abe.png">悠々abe/ナラ/OU</option>
+          <option value="sofa/levita2.png">Levita/ナラ/DU/床ナチュラル</option>    
+          <option value="sofa/seoto2.png">seoto/ウォルナット/WA/床ナチュラル</option>
+          <option value="sofa/seoto_n2.png">seoto/Wオーク/OU/床ナチュラル</option>
+          <option value="sofa/morikoto2.png">森のことば/ナラ/OF/床ナチュラル</option>
+          <option value="sofa/viola2.png">VIOLA/ナラ/OU/床ナチュラル</option>
+          <option value="sofa/onga2.png">温雅/ウォルナット/WA/床ウォルナット</option>
+          <option value="sofa/onga3.png">温雅/オーク/OU/床ナチュラル</option>
+          <option value="sofa/kazenouta2.png">風のうた/オーク/WO/床ナチュラル</option>
+          <option value="sofa/sd2.png">スタンドードC/オーク/OF/床ナチュラル</option>
+          <option value="sofa/morikoto_ou.png">森こと片肘/OU/背景なし</option>
+          <option value="sofa/morikoto_wa.png">森こと片肘/WA/背景なし</option>
+          <option value="sofa/seoto_wo.png">SEOTO/WO/背景なし</option>
+          <option value="sofa/seoto_wa.png">SEOTO/WA/背景なし</option>
+          </select>
+      </div> 
+      
+      <div class="select_fabric"> 
+        <select class="fabric_rank rounded-pill btn-secondary" id="fabric_rank" size="1">
+          <option>--張地のランクを選択してください--</option>
+          <option value="tif">TIFランク</option>
+          <option value="b">Bランク</option>
+          <option value="c">Cランク</option>
+          <option value="e">Eランク</option>
+          <option value="gb">合皮 Bランク</option>
+          <option value="ha">本革Aランク 未収録</option>
+          <option value="hb">本革Bランク 未収録</option>
+          <option value="s">shop専用</option>
+        </select> 
 
+        <select class="fabric_name rounded-pill btn-secondary" name="fabric_name" id="fabric_name" size="1" onchange="change_fabric(this,fabric)">
+          <option value="">--張地を選択してください--</option> 
+        </select>
+
+        <div class="link_home">
+          <a href="http://linkpagetest.s3-website-ap-northeast-1.amazonaws.com/">home</a>
+        </div>
+      </div>
+
+      <div class="mainimg">
+        <img class="fabric" id="fabric" src="fabric/seiburu_bu3_15.png" width="918" height="540"> 
+        <img class= "sofa" id="sofa" src="sofa/kioku2_abe.png" width="918" height="540"> 
+        <!-- 元サイズw1020 h600 59% -->
+      </div>
+
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="kasane2.js"></script>
 
   </body>
 </html>
-
-<!--
-  <option value="fabric/dog_bl2.png">ドックB</option>
-  <option value="fabric/dog_re2.png">ドックRE</option>
-  <option value="fabric/safirosu_dgr2.png">サフィロスDGR</option>
-  <option value="">セイブルBU</option>
-  <option value="fabric/senoo.png">せのお</option>
-  <option value="fabric/hisamitu.png">ひさみつ</option>
-
--->

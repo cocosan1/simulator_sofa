@@ -152,7 +152,7 @@ document.getElementById('fabric_rank').onchange = function() {
     let change_rank = fabric_rank.value;
     for (let i = 0; i < array[change_rank].length; i++) {
         let op = document.createElement("option"); //optionタグ生成
-        value = array[change_rank][i];　//arrayのcd　labelをvalueに投入
+        value = array[change_rank][i]; //arrayのcd　labelをvalueに投入
         op.value = value.cd;
         op.label = value.label;
         fabric_name.appendChild(op);
